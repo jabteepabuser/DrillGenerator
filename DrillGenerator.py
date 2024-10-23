@@ -13,6 +13,13 @@ counter_list.append("Defend Lead Hand Parry - Left Hook - Low Kick.")
 counter_list.append("Parry Cross - Lead Downward Elbow - Knee.")
 counter_list.append("Slip Jab - Cross - Lead Upper - Low Kick.")
 counter_list.append("Cross Check Inside Leg - Low Kick - Teep.")
+counter_list.append("Check Rear Kick - Lead Teep.")
+counter_list.append("Long Guard  (Defend Against Overhand Right) - Rear Upper - Left Hook - Low Kick.")
+counter_list.append("Arm Block Left Hook - Cross - Left Hook - Body Kick.")
+counter_list.append("Move lead leg back - Rear Teep.")
+
+
+
 #COUNTER ENDS
 
 #DRILL DATABASE ENDS HERE
