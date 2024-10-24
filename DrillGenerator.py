@@ -27,6 +27,7 @@ feint_list.append("Jab Jab - Cross to body - Fake Body Cross - Left Hook - Low K
 feint_list.append("Teep - Fake Teep - Check Hook - Head Kick.")
 feint_list.append("Teep - Fake Teep - Switch Head Kick - Cross.")
 feint_list.append("JabCross - Fake Cross - Livershot - Low Kick.")
+feint_list.append("Jab - Low Kick - Feint Dip - Feint Low Kick - Sweep Leg if opponent Leg Raised.")
 #FEINTS ENDS
 #DRILL DATABASE ENDS HERE
 
