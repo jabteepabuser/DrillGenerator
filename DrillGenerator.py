@@ -29,6 +29,18 @@ feint_list.append("Teep - Fake Teep - Switch Head Kick - Cross.")
 feint_list.append("JabCross - Fake Cross - Livershot - Low Kick.")
 feint_list.append("Jab - Low Kick - Feint Dip - Feint Low Kick - Sweep Leg if opponent Leg Raised.")
 #FEINTS ENDS
+
+#BLITZ
+blitz_list: list[str] = []
+blitz_list.append("Jab - LivershotLeftHook - Switch Kick Head Off Centre Line. ")
+blitz_list.append("Cross - Hook - Low Kick")
+blitz_list.append("Overhand Right - Lead UpperCut - Low Kick.")
+blitz_list.append("Overhand Right - Livershot - Low Kick.")
+blitz_list.append("Jab - Check Hook to Left - Head Kick.")
+blitz_list.append("Jab - Lead Upper - Head Kick.")
+#BLITZ ENDS
+
+
 #DRILL DATABASE ENDS HERE
 
 
@@ -36,25 +48,35 @@ feint_list.append("Jab - Low Kick - Feint Dip - Feint Low Kick - Sweep Leg if op
 
 #FUNCTION STARTS HERE
 #generates a random combo from database
+print("Welcome To DrillGenerator, Remember to flow in each combination and Add Exits for safety.")  # first prompt on UI.
 while True: #while True means that while all conditions are true, keep executing, break ends it.
-    random_counter = random.choice(counter_list) # for counters #random.choice is the function for random items.
-    random_feint = random.choice(feint_list) # for feints
-    print("Remember to do each drill with the intent of flow and nothingness. Add Exits for safety.") #first prompt
-    print("What do you wish to work on? \n Counters\n Feints \n Blitzing Combos \n Initiation")
+    random_counter = random.choice(counter_list) # for counters #this is where the initial loop begins.
+    random_feint = random.choice(feint_list) # for feints #random.choice is the function for random items.
+    random_blitz =random.choice(blitz_list) # for blitz #random.choice is the function for random items.
+    print("What do you wish to work on? Write the first letter of the combo of your choice: \nCounters(C)\nFeints(F)\nBlitzing Combos(B)")#first prompt on UI as well.
     user_input: str = input("").strip().lower() #makes the program not care about the spacing nor the capitalization of input.
-    if user_input == "counters":
+    if user_input == "c":
         print(random_counter) #proceeds to executing the function for counters
-    elif user_input == "feints":
-        print(random_feint) #proceeds to executing the function for feints
+    elif user_input == "f":
+        print(random_feint) #proceeds to executing the function for feint
+    elif user_input == "b":
+        print(random_blitz) #proceeds to executing the function for blitz.
     else: #prints an error message if the user does an invalid input.
         print("Error, please only enter the ones above. or check your spelling.")
-        continue #continues to next prompt
+        continue #continue means it goes back to the initial loop.
 
     print("Would you like to do another combo? Y/N?") #this is the second prompt
     last_prompt = input("").strip().lower()
-    if last_prompt != "y": #loop ends if the condition is not true
-        print("Fuck You Then LOL.")
-        break #initially breaks loop.
+    if last_prompt == "y":
+        continue
+    elif last_prompt== "n":
+        print("Ok fuck off then lol.")
+        break
+    else:
+        print("Error! Only input either Y or N!") #THIS PART NEEDS TO BE FIXED, INSTEAD OF ASKING THE FIRST PROMPT AGAIN, IT NEEDS TO ASK THE SECOND
+
+
+
 
 
 #FUNCTION ENDS HERE
