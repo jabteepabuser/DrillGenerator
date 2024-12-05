@@ -70,7 +70,7 @@ while True: #while True means that while all conditions are true, keep executing
     if last_prompt == "y":
         continue
     elif last_prompt== "n":
-        print("Ok fuck off then lol.")
+        print("Ok")
         break
     else:
         print("Error! Only input either Y or N!") #THIS PART NEEDS TO BE FIXED, INSTEAD OF ASKING THE FIRST PROMPT AGAIN, IT NEEDS TO ASK THE SECOND
